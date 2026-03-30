@@ -2,7 +2,7 @@
 
 **19,000+ live TV channels from 17 sources. One HTML file. No installation.**
 
-🔴 **[Launch AirwaveTV](https://yourusername.github.io/airwavetv/)** ← *Replace with your actual GitHub Pages URL*
+🔴 **[Launch AirwaveTV](https://mrpentestrz.github.io/airwavetv/)** ← *Replace with your actual GitHub Pages URL*
 
 ---
 
@@ -50,7 +50,7 @@ All sources are deduplicated automatically.
 ## How to Use
 
 ### Option 1: Use Online
-Visit the [live site](https://yourusername.github.io/airwavetv/) — no download needed.
+Visit the [live site](https://mrpentestrz.github.io/airwavetv/) — no download needed.
 
 ### Option 2: Download & Open Locally
 1. Download `index.html`
