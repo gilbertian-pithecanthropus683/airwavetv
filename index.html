@@ -139,7 +139,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--t1);overflow:hidde
   </div>
   <div id="main">
     <div id="player">
-      <video id="vid" controls autoplay playsinline style="display:none"></video>
+      <video id="vid" controls autoplay playsinline webkit-playsinline style="display:none"></video>
       <div id="overlay">
         <div id="ov-welcome">
           <div class="ov-icon">📡</div>
@@ -483,10 +483,61 @@ function tune(id){
     hlsP.on(Hls.Events.ERROR,function(ev,data){
       if(data.fatal){if(window._askip)clearTimeout(window._askip);markDead(ch.id);if(autoSkipOn){next();}else{setOv('error');document.getElementById('emsg').textContent=data.type==='networkError'?'Network error — CORS blocked or server down.':'Stream unavailable or geo-restricted.';}}
     });
-  }else if(v.canPlayType('application/vnd.apple.mpegurl')){
+  }else{
+    // Safari/iOS native HLS — no hls.js needed, Safari handles m3u8 natively
     v.src=ch.u;
-    v.addEventListener('loadedmetadata',function(){if(window._askip)clearTimeout(window._askip);setOv('hide');v.play().catch(function(){});markAlive(ch.id);},{once:true});
-    v.addEventListener('error',function(){if(window._askip)clearTimeout(window._askip);markDead(ch.id);if(autoSkipOn){next();}else{setOv('error');}},{once:true});
+    v.load();
+    // Handle autoplay restrictions (iOS requires user gesture)
+    var playAttempt=v.play();
+    if(playAttempt!==undefined){
+      playAttempt.then(function(){
+        if(window._askip)clearTimeout(window._askip);
+        setOv('hide');
+        markAlive(ch.id);
+      }).catch(function(){
+        // Try muted autoplay (iOS allows this)
+        v.muted=true;
+        v.play().then(function(){
+          if(window._askip)clearTimeout(window._askip);
+          setOv('hide');
+          markAlive(ch.id);
+          // Show unmute hint briefly
+          document.getElementById('np-program').textContent='🔇 Tap the video and unmute to hear audio';
+          v.addEventListener('volumechange',function(){
+            if(!v.muted)document.getElementById('np-program').textContent='';
+          },{once:true});
+        }).catch(function(){
+          // Both failed — show tap-to-play
+          if(window._askip)clearTimeout(window._askip);
+          setOv('hide');
+          v.controls=true;
+          document.getElementById('np-program').textContent='▶ Tap the video to start playback';
+          markAlive(ch.id);
+        });
+      });
+    }
+    // Error fallback
+    v.addEventListener('error',function(){
+      if(window._askip)clearTimeout(window._askip);
+      markDead(ch.id);
+      if(autoSkipOn){next();}else{
+        setOv('error');
+        document.getElementById('emsg').textContent='Stream unavailable. Try another channel.';
+      }
+    },{once:true});
+    // Metadata loaded = stream is working
+    v.addEventListener('loadedmetadata',function(){
+      if(window._askip)clearTimeout(window._askip);
+      setOv('hide');
+      markAlive(ch.id);
+    },{once:true});
+    // Timeout for native player (10 seconds)
+    setTimeout(function(){
+      if(cur&&cur.id===ch.id&&v.readyState===0){
+        markDead(ch.id);
+        if(autoSkipOn){next();}
+      }
+    },10000);
   }
   // Fetch EPG data for this channel
   if(ch.chId){
